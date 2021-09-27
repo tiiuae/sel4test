@@ -59,7 +59,7 @@ int test_timer(driver_env_t env)
 
     return sel4test_get_result();
 }
-DEFINE_TEST_BOOTSTRAP(TIMER0001, "Basic timer testing", test_timer, config_set(CONFIG_HAVE_TIMER))
+/* DEFINE_TEST_BOOTSTRAP(TIMER0001, "Basic timer testing", test_timer, config_set(CONFIG_HAVE_TIMER)) */
 
 int
 test_gettime_timeout(driver_env_t env)
@@ -96,5 +96,5 @@ test_gettime_timeout(driver_env_t env)
 
     return sel4test_get_result();
 }
-DEFINE_TEST_BOOTSTRAP(TIMER0002, "Test that the timer moves between gettime and timeout calls", test_gettime_timeout,
-                      config_set(CONFIG_HAVE_TIMER))
+/* DEFINE_TEST_BOOTSTRAP(TIMER0002, "Test that the timer moves between gettime and timeout calls", test_gettime_timeout,
+                      config_set(CONFIG_HAVE_TIMER)) */
